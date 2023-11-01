@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<FlowPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo2.HelloController">
+    <children>
+      <Label prefHeight="38.0" prefWidth="59.0" text="Name:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+        <TextField fx:id="nameField" prefHeight="37.0" prefWidth="538.0" promptText="Kárek Mubelka" />
+      <Label prefHeight="31.0" prefWidth="73.0" text="Subject:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="subjectField" onMouseEntered="#initialize" prefWidth="150.0" />
+      <Label prefHeight="34.0" prefWidth="60.0" text="Marks:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+        <TextField fx:id="marksArrayField" prefHeight="36.0" prefWidth="315.0" promptText="1,2,3,4,5" />
+        <Button fx:id="convert" mnemonicParsing="false" onAction="#onConvertClick" prefHeight="38.0" prefWidth="97.0" text="Convert" />
+      <ListView fx:id="text" prefHeight="525.0" prefWidth="812.0" />
+    </children>
+</FlowPane>
